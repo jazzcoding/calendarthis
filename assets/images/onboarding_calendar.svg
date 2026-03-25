@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="70" width="200" height="180" rx="5" fill="#FFFFFF" stroke="#232F34" stroke-width="3"/>
+  <rect x="50" y="70" width="200" height="30" rx="5" fill="#4A6572"/>
+  <line x1="85" y1="100" x2="85" y2="250" stroke="#232F34" stroke-width="1"/>
+  <line x1="120" y1="100" x2="120" y2="250" stroke="#232F34" stroke-width="1"/>
+  <line x1="155" y1="100" x2="155" y2="250" stroke="#232F34" stroke-width="1"/>
+  <line x1="190" y1="100" x2="190" y2="250" stroke="#232F34" stroke-width="1"/>
+  <line x1="225" y1="100" x2="225" y2="250" stroke="#232F34" stroke-width="1"/>
+  <line x1="50" y1="135" x2="250" y2="135" stroke="#232F34" stroke-width="1"/>
+  <line x1="50" y1="170" x2="250" y2="170" stroke="#232F34" stroke-width="1"/>
+  <line x1="50" y1="205" x2="250" y2="205" stroke="#232F34" stroke-width="1"/>
+  <rect x="120" y="135" width="35" height="35" fill="#F9AA33" opacity="0.7"/>
+  <circle cx="225" cy="50" r="20" fill="#F9AA33" stroke="#232F34" stroke-width="2"/>
+  <path d="M220,50 L230,50 M225,45 L225,55" stroke="#232F34" stroke-width="3"/>
+</svg>

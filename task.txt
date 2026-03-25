@@ -1,0 +1,279 @@
+# CalendarThis! App Development Tasks
+
+## 1. Project Setup and Configuration [COMPLETED]
+- [x] Initialize Flutter project with appropriate name and package structure
+- [x] Configure project for multi-platform support (Android, iOS)
+- [x] Set up version control (Git)
+- [x] Create project architecture (MVVM or BLoC pattern)
+- [x] Configure dependencies in pubspec.yaml
+- [x] Set up development, staging, and production environments
+
+## 2. UI/UX Design [COMPLETED]
+- [x] Create wireframes for all screens
+  - [x] Main app interface
+  - [x] Event creation form
+  - [x] Settings screen
+  - [x] Onboarding screens
+- [x] Design high-fidelity mockups
+- [x] Create app theme (colors, typography, spacing)
+- [x] Design app icon and splash screen
+- [x] Implement responsive design for different screen sizes
+
+## 3. Core Functionality Implementation
+
+### 3.1 Text Extraction & Processing
+- [x] Implement text selection functionality
+  - [x] Create service to handle text selection from other apps
+  - [x] Implement clipboard access and management
+- [x] Develop natural language processing for date/time extraction
+  - [x] Research and integrate NLP libraries (e.g., flutter_nlp, text_analysis)
+  - [x] Create algorithms for identifying event details (title, date, time, location)
+  - [x] Implement regex patterns for common date/time formats
+  - [x] Handle edge cases and different languages/formats
+- [x] Integrate AI-powered text understanding
+  - [x] Implement OpenRouter API integration
+  - [x] Create AI text understanding service
+  - [x] Add fallback to regex-based extraction
+  - [x] Implement secure API key management
+
+### 3.2 Image Processing & OCR
+- [x] Implement image capture functionality
+  - [x] Camera integration for direct scanning (HIGH PRIORITY)
+  - [x] Image gallery access for importing screenshots (HIGH PRIORITY)
+- [x] Integrate OCR capabilities
+  - [x] Research and select OCR library (e.g., google_ml_kit, firebase_ml_vision)
+  - [x] Implement text extraction from images (MEDIUM PRIORITY)
+  - [x] Create preprocessing for image optimization
+  - [x] Develop post-processing for extracted text
+
+### 3.3 Event Management
+- [x] Create event creation workflows
+  - [x] Build models for events
+  - [x] Implement CRUD operations for events
+- [x] Implement local storage for events
+- [x] Create calendar view for visualizing events
+
+## 4. Platform Integration
+
+### 4.1 Android Integration
+- [x] Implement Android-specific features
+  - [x] Context menu integration (Share to/Open with) (HIGH PRIORITY)
+  - [x] Notification permissions (MEDIUM PRIORITY)
+- [x] Configure Android manifest for required permissions
+  - [x] Configure back button handling
+- [ ] Implement Android widgets (LOW PRIORITY)
+
+### 4.2 iOS Integration
+- [ ] Implement iOS-specific features
+  - [ ] Share extension
+  - [ ] Action extension for context menu
+  - [ ] Notification permissions
+- [ ] Configure Info.plist for required permissions
+- [ ] Implement iOS widgets (if applicable)
+
+## 5. User Experience Features
+
+### 5.1 Smart Form Auto-fill
+- [x] Develop intelligent form population
+  - [x] Create algorithms for determining most likely event details
+  - [x] Implement confidence scoring for extracted information
+  - [x] Build UI for showing confidence levels
+- [x] Implement manual correction capabilities
+  - [x] Create intuitive edit interfaces
+  - [x] Implement validation for user inputs
+- [x] Fix form submission issues
+  - [x] Debug event saving functionality (HIGH PRIORITY)
+  - [x] Ensure proper data validation before saving
+  - [x] Fix issue with saving events after extraction
+  - [x] Implement progress feedback during event saving
+
+### 5.1.1 Extraction Page Improvements
+- [x] Redesign extraction page UI
+  - [x] Implement card-based layout for better visual hierarchy
+  - [x] Add confidence indicators for extracted fields
+  - [x] Improve date and time selection UI
+  - [x] Enhance location input field
+  - [x] Add help dialog with usage instructions
+  - [x] Implement loading indicators during extraction
+  - [x] Add example text options for testing
+- [x] Fix remaining extraction issues
+  - [x] Fix date extraction for formats like "Sunday, May 5"
+  - [x] Improve time range extraction (e.g., "4:00 PM – 8:00 PM")
+  - [x] Fix location extraction for complex formats
+  - [x] Fix event saving after extraction
+
+### 5.2 Event Management
+- [x] Create event list view
+  - [x] Design and implement event list UI
+  - [x] Add filtering and sorting options
+  - [x] Implement event search functionality
+  - [x] Create event detail view
+  - [x] Implement calendar view with date selection
+  - [x] Add grouping of events by date
+  - [x] Add color coding for events
+  - [x] Implement toggle between list and calendar views
+- [x] Add event management features
+  - [x] Implement edit functionality
+  - [x] Implement delete functionality
+  - [x] Add sharing options
+
+### 5.3 Settings & Preferences
+- [x] Create settings screen
+  - [x] Time format preferences (12h/24h)
+  - [x] Date format preferences
+  - [x] Language settings
+  - [x] AI settings and configuration
+- [x] Implement persistent storage for user preferences
+- [x] Create onboarding flow for initial setup
+
+## 6. Testing
+
+### 6.1 Unit Testing
+- [x] Write unit tests for core functionality
+  - [x] Text extraction algorithms
+  - [x] Date/time parsing
+  - [x] Event service interfaces
+  - [x] Data models
+
+### 6.2 Integration Testing [COMPLETED]
+- [x] Implement integration tests
+  - [x] End-to-end event creation flows (HIGH PRIORITY)
+  - [x] Platform-specific features (MEDIUM PRIORITY)
+
+### 6.3 User Testing
+- [ ] Conduct usability testing
+  - [ ] Create test scenarios
+  - [ ] Gather and analyze feedback
+  - [ ] Implement improvements based on feedback
+
+## 7. Performance Optimization [COMPLETED]
+- [x] Optimize app startup time (MEDIUM PRIORITY)
+- [x] Improve image processing speed (MEDIUM PRIORITY)
+- [x] Reduce memory usage (LOW PRIORITY)
+- [x] Implement caching strategies (MEDIUM PRIORITY)
+- [x] Optimize battery usage (LOW PRIORITY)
+
+## 8. Security & Privacy
+- [x] Implement secure storage for API keys and tokens
+  - [x] Secure storage for OpenRouter API key
+  - [x] Implement API key management UI
+- [ ] Add privacy features (data handling policies)
+- [x] Ensure compliance with platform guidelines
+- [x] Implement proper error handling and logging
+- [ ] Create privacy policy document
+
+## 9. Deployment Preparation
+- [ ] Create app store assets
+  - [ ] Screenshots
+  - [ ] Promotional graphics
+  - [ ] App descriptions
+- [ ] Prepare release notes
+- [ ] Configure CI/CD pipeline
+- [ ] Set up crash reporting and analytics
+
+## 10. Launch & Post-Launch
+- [ ] Submit to app stores
+  - [ ] Google Play Store submission
+  - [ ] Apple App Store submission
+- [ ] Monitor initial user feedback
+- [ ] Plan for first update based on feedback
+- [ ] Implement marketing strategy
+
+## 11. Documentation
+- [ ] Create technical documentation
+  - [ ] Architecture overview
+  - [ ] API documentation
+  - [ ] Third-party integrations
+- [ ] Write user documentation
+  - [ ] User guide
+  - [ ] FAQ
+  - [ ] Troubleshooting guide
+
+## 12. Next Steps (TODO)
+
+### Immediate Priorities (Next Sprint)
+- [x] Complete onboarding flow implementation
+- [x] Implement camera integration for direct scanning
+- [x] Add image gallery access for importing screenshots
+- [x] Implement Android context menu integration (Share to/Open with)
+- [x] Write integration tests for event creation flows
+- [x] Fix event saving functionality
+  - [x] Implement basic event saving
+  - [x] Fix issue with saving events after extraction (HIGH PRIORITY)
+  - [x] Ensure extracted text is saved with the event for reference
+- [x] Fix text translation issues
+- [x] Remove calendar integration and focus on local event storage
+- [x] Implement calendar view for visualizing saved events
+- [x] Improve location extraction accuracy
+  - [x] Add support for emoji-prefixed locations (e.g., "📍 Location: Willow Park")
+  - [x] Fix issues with complex location formats (e.g., "under the big oak tree")
+- [x] Fix text extraction date/time parsing issues:
+  - [x] Fix extracted dates not being properly populated in the form
+  - [x] Make text extraction more flexible to handle events without end dates
+  - [x] Support events without specific start times
+  - [x] Improve handling of various date/time formats in extracted text
+  - [x] Add support for emoji-prefixed date formats (e.g., "📅 Date: Sunday, May 5")
+  - [x] Add support for day of week with month and day format (e.g., "Sunday, May 5")
+  - [x] Add support for time ranges with emoji prefixes (e.g., "🕓 Time: 4:00 PM – 8:00 PM")
+
+### Medium-Term Priorities
+- [x] Implement text extraction from images
+- [x] Add notification permissions
+- [x] Optimize app startup time
+- [x] Implement caching strategies
+- [x] Create privacy policy document
+- [x] Begin work on technical documentation
+
+### Long-Term Priorities
+- [ ] Complete iOS integration
+- [ ] Implement widgets for Android and iOS
+- [ ] Prepare for app store submission
+- [ ] Set up analytics and crash reporting
+- [ ] Create marketing materials
+
+## 13. Current Issues and Next Steps
+
+### 13.1 Extraction Page Issues [COMPLETED]
+- [x] **Location Extraction Issues**
+  - [x] Fix extraction of complex location descriptions (e.g., "under the big oak tree")
+  - [x] Improve location parsing for multi-line addresses
+  - [x] Add support for location context (e.g., room numbers, building names)
+  - [x] Implement location validation
+
+### 13.2 Event Saving Issues [COMPLETED]
+- [x] **Event Creation Problems**
+  - [x] Fix issue where events are not saved after extraction
+  - [x] Implement progress feedback during event saving
+  - [x] Add error handling for failed event creation
+  - [x] Save the original extracted text with the event for reference
+  - [x] Add confirmation dialog after successful event creation
+
+### 13.3 UI Improvements [COMPLETED]
+- [x] **Dashboard Enhancements**
+  - [x] Remove header and integrate app title in hero section
+  - [x] Update bottom navigation bar with 4 items (Home, Calendar, Extract, Settings)
+  - [x] Swap button styles to emphasize text extraction feature
+  - [x] Enhance action buttons with better visual hierarchy
+  - [x] Improve overall dashboard UI with modern design elements
+  - [x] Add subtle animations and visual cues
+  - [x] Implement consistent color scheme and typography
+
+### 13.4 Planned Improvements
+- [x] **Enhanced Extraction** [COMPLETED]
+  - [x] Improve confidence scoring for extracted fields
+  - [x] Add support for recurring events
+  - [x] Implement better handling of ambiguous dates and times
+  - [x] Add support for extracting attendees/participants
+  - [x] Improve extraction of event categories/tags
+
+- [x] **UI Enhancements** [COMPLETED]
+  - [x] Add animations for smoother transitions
+  - [x] Implement dark mode support
+  - [x] Add accessibility features
+  - [x] Improve form validation feedback
+  - [x] Create a more intuitive event creation flow
+  - [x] Improve dashboard UI with modern design
+  - [x] Remove header and integrate app title in hero section
+  - [x] Update bottom navigation bar with 4 items
+  - [x] Swap button styles to emphasize text extraction feature
+  - [x] Enhance action buttons with better visual hierarchy

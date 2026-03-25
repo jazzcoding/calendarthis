@@ -1,0 +1,91 @@
+{
+  "@@locale": "en",
+  "appTitle": "CalendarThis!",
+  "extractFromText": "Extract from Text",
+  "scanFromImage": "Scan from Image",
+  "createNewEvent": "Create New Event",
+  "viewMyEvents": "View My Events",
+  "settings": "Settings",
+  "enterOrPasteText": "Enter or paste text",
+  "pasteTextHint": "Paste an email, message, or any text containing event details...",
+  "pasteFromClipboard": "Paste from Clipboard",
+  "clear": "Clear",
+  "extractEventDetails": "Extract Event Details",
+  "extractEventDetailsWithAI": "Extract Event Details with AI",
+  "extractingEventDetails": "Extracting event details...",
+  "extractingEventDetailsWithAI": "Extracting event details with AI...",
+  "usingOpenRouterAI": "Using OpenRouter AI for better accuracy",
+  "extractedEventDetails": "Extracted Event Details",
+  "eventTitle": "Event Title",
+  "description": "Description",
+  "location": "Location",
+  "dateAndTime": "Date & Time",
+  "startDate": "Start Date",
+  "startTime": "Start Time",
+  "endDate": "End Date",
+  "endTime": "End Time",
+  "attendees": "Attendees",
+  "createEvent": "Create Event",
+  "editSourceText": "Edit Source Text",
+  "eventCreatedSuccessfully": "Event created successfully!",
+  "failedToCreateEvent": "Failed to create event. Please try again.",
+  "errorCreatingEvent": "Error creating event: {error}",
+  "@errorCreatingEvent": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPreparingEvent": "Error preparing event: {error}",
+  "@errorPreparingEvent": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarPermissionRequired": "Calendar permission is required to create events.",
+  "noCalendarsAvailable": "No calendars available. Please add a calendar to your device.",
+  "usingCalendar": "Using calendar: {calendarName}",
+  "@usingCalendar": {
+    "placeholders": {
+      "calendarName": {
+        "type": "String"
+      }
+    }
+  },
+  "takePicture": "Take Picture",
+  "gallery": "Gallery",
+  "extractText": "Extract Text",
+  "processing": "Processing...",
+  "scanDocument": "Scan Document",
+  "takePictureOrSelectImage": "Take a picture or select an image\ncontaining event details",
+  "processingImage": "Processing image...",
+  "cameraPermissionRequired": "Camera permission is required to use this feature.",
+  "pleaseSelectImage": "Please take or select an image first.",
+  "errorTakingPicture": "Error taking picture: {error}",
+  "@errorTakingPicture": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingImage": "Error picking image: {error}",
+  "@errorPickingImage": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorProcessingImage": "Error processing image: {error}",
+  "@errorProcessingImage": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  }
+}
